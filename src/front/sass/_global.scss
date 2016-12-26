@@ -1,0 +1,71 @@
+@import 'colors';
+@import 'font';
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.app {
+    height: 100%;
+    background-color: $mine-shaft;
+    color: $gallery;
+}
+
+a {
+    cursor: pointer;
+    color: $tulip-tree;
+    text-decoration: none;
+    &:hover {
+        color: $geebung;
+    }
+}
+
+a.link {
+    color: hsla(0,0%,100%,.7);
+    &:hover {
+        color: $gallery;
+    }
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    li {
+        list-style: none;
+        margin: 0;        
+        padding: 5px 0;
+    }
+}
+
+.wrapper {
+    margin-left: 50px;
+    .container {
+        margin: 0 auto;
+        padding: 10px 20px;
+    }
+}
+
+.material-icons {
+    vertical-align: sub;
+}
+
+.pull-right {
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+table {
+    td {
+        padding: 5px 8px; 
+        white-space: nowrap;
+    }
+}
+
+input[type=password], [type=email], [type=url], input[type=date], input[type=month], input[type=time], input[type=datetime], input[type=datetime-local], input[type=week], input[type=tel], input[type=color], input[type=number], input[type=search], input[type=text], select, textarea {
+    color: $black !important;
+}
